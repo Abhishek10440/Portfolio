@@ -1,0 +1,9 @@
+.edu-section { padding: 80px 60px; color: #fff; }
+.edu-section .section-title { font-size:2rem; margin-bottom:20px; background: linear-gradient(90deg,#34d399,#60a5fa); -webkit-background-clip:text; color:transparent; }
+.edu-timeline { display:flex; flex-direction:column; gap:16px; }
+.edu-item { display:flex; gap:16px; align-items:flex-start; background:rgba(255,255,255,0.03); padding:16px; border-radius:10px; border:1px solid rgba(255,255,255,0.04); }
+.edu-year { min-width:120px; color:#60a5fa; font-weight:700 }
+.edu-body h3 { margin:0 0 6px 0 }
+.edu-body p { margin:0; color:#d0d0d0 }
+
+@media (max-width:768px){ .edu-section{padding:48px 20px} }

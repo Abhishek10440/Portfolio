@@ -1,0 +1,29 @@
+.site-footer {
+  padding: 24px 6vw;
+  border-top: 1px solid var(--border);
+  color: #aeb4bf;
+}
+
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 18px;
+}
+
+.footer-links a {
+  color: #e5e7eb;
+  text-decoration: none;
+}
+
+.footer-links a:hover { color: #67e8f9; }
+
+@media (max-width: 680px) {
+  .site-footer { padding: 24px 20px; text-align: center; }
+  .footer-inner { flex-direction: column; }
+}

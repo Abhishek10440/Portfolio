@@ -1,0 +1,100 @@
+.contact-section {
+  padding: 90px 6vw;
+  color: #fff;
+}
+
+.contact-section .section-title {
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #fb923c, #60a5fa);
+  background-clip: text;
+  color: transparent;
+}
+
+.contact-intro {
+  max-width: 700px;
+  margin-bottom: 30px;
+  color: var(--muted);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.75fr) minmax(0, 1.25fr);
+  gap: 28px;
+  align-items: stretch;
+}
+
+.contact-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.contact-card img {
+  width: min(100%, 280px);
+  margin: 0 auto 20px;
+}
+
+.contact-details h3 { margin-bottom: 8px; }
+.contact-details p { margin-bottom: 12px; color: var(--muted); }
+.contact-details a { color: #67e8f9; overflow-wrap: anywhere; }
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  padding: 28px;
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  background: var(--surface);
+}
+
+.contact-form label {
+  margin: 4px 0 6px;
+  color: #e5e7eb;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  background: rgba(0, 0, 0, 0.18);
+  color: #fff;
+}
+
+.contact-form textarea { resize: vertical; }
+.contact-form input::placeholder,
+.contact-form textarea::placeholder { color: #8f96a3; }
+
+.contact-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.btn[disabled] { cursor: not-allowed; opacity: 0.6; }
+.contact-status { min-height: 42px; margin-top: 12px; font-size: 0.92rem; }
+.contact-status .success,
+.contact-status .error { padding: 8px 12px; border-radius: 6px; }
+.contact-status .success { border-left: 3px solid #34d399; background: rgba(52, 211, 153, 0.1); color: #6ee7b7; }
+.contact-status .error { border-left: 3px solid #fb7185; background: rgba(251, 113, 133, 0.1); color: #fda4af; }
+
+@media (max-width: 850px) {
+  .contact-section { padding: 72px 20px; }
+  .contact-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 520px) {
+  .contact-card,
+  .contact-form { padding: 20px; }
+  .contact-actions { flex-direction: column; }
+  .contact-actions .btn { width: 100%; }
+}
